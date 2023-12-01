@@ -30,7 +30,7 @@ cd burmese-FlairEmbeddings
 from flair.embeddings import FlairEmbeddings
 
 # specify the path to your pre-trained model
-model_path = "path/to/burmese-flair-embeddings"
+model_path = "path/to/burmese-flair-embeddings/language_model_fw/best.lm.pt"
 
 # load the embeddings
 burmese_embeddings = FlairEmbeddings(model_path)
@@ -50,3 +50,6 @@ for token in sentence:
     print(token.embedding)
 ```
 Refer to the Flair documentation for more details on using embeddings: [FlairNLP](https://flairnlp.github.io/docs/intro)
+
+## Training Pipeline
+The training pipeline is provided in the Jupyter notebook `flairembeddings.ipynb`.
